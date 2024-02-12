@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+
+<body>
+    <header class="container__cabecalho">
+        <div class="cabecalho">
+            <img class="cabecalho__imagem" src="images/logo.png" alt="Logo" >
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="container__inserirtexto">
+            <textarea id="inserir_texto" class="area__texto" placeholder="Digite seu Texto aqui!"></textarea>
+
+            <div class="container__botoes">
+                <button id="botao__criptografar" onclick="criptografa()">Criptografar</button>
+                <button id="botao__descriptografar" onclick="descriptografar()">Descriptografar</button>
+            </div>
+        </div>
+
+        <div class="container__resposta">
+            <div id="conteudo__resposta" class="container__resposta__texto">
+                <h2 class="sub-titulo__resposta">Nenhuma Mensagem encontrada</h2>
+                <p class="paragrafo__resposta">Digite o texto que você deseja criptografar.</p>
+                <img src="images/img3.png" alt="">
+            </div>
+            <div class="resposta">
+                <textarea id="resposta__texto"></textarea>
+                <button id="botao__copiar" onclick="copiarTexto()">Copiar Texto</button>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="rodape">
+        <p id="rodape__texto">&copy; 2024 - Desenvolvido por Luis Henrique da Silva</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
